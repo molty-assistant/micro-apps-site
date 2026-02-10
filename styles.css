@@ -31,6 +31,9 @@
   --purple: #8b5cf6;
   --purple-light: #f5f3ff;
   --purple-glow: rgba(139, 92, 246, 0.15);
+  --green: #22c55e;
+  --green-light: #f0fdf4;
+  --green-glow: rgba(34, 197, 94, 0.15);
 
   /* Surfaces */
   --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.06);
@@ -61,6 +64,7 @@
     --blue-light: rgba(59, 130, 246, 0.1);
     --orange-light: rgba(245, 158, 11, 0.1);
     --purple-light: rgba(139, 92, 246, 0.1);
+    --green-light: rgba(34, 197, 94, 0.1);
 
     --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.3);
     --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.4);
@@ -332,6 +336,13 @@ a:focus-visible {
   border-color: var(--purple-glow);
 }
 
+.fc-4 {
+  bottom: 130px;
+  right: 30px;
+  animation-delay: -1s;
+  border-color: var(--green-glow);
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-14px); }
@@ -372,7 +383,7 @@ a:focus-visible {
 
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 64px;
 }
@@ -409,6 +420,7 @@ a:focus-visible {
 .app-icon--blue { background: var(--blue-light); }
 .app-icon--orange { background: var(--orange-light); }
 .app-icon--purple { background: var(--purple-light); }
+.app-icon--green { background: var(--green-light); }
 
 .app-badge {
   display: inline-flex;
@@ -426,6 +438,7 @@ a:focus-visible {
 .app-card--blue .app-badge { color: var(--blue); background: var(--blue-light); }
 .app-card--orange .app-badge { color: var(--orange); background: var(--orange-light); }
 .app-card--purple .app-badge { color: var(--purple); background: var(--purple-light); }
+.app-card--green .app-badge { color: var(--green); background: var(--green-light); }
 
 .app-card h3 {
   font-size: 1.375rem;
@@ -465,6 +478,7 @@ a:focus-visible {
 .app-card--blue .feature-icon { color: var(--blue); }
 .app-card--orange .feature-icon { color: var(--orange); }
 .app-card--purple .feature-icon { color: var(--purple); }
+.app-card--green .feature-icon { color: var(--green); }
 
 .app-price {
   font-size: 1.125rem;
@@ -475,6 +489,7 @@ a:focus-visible {
 .app-card--blue .app-price { color: var(--blue); }
 .app-card--orange .app-price { color: var(--orange); }
 .app-card--purple .app-price { color: var(--purple); }
+.app-card--green .app-price { color: var(--green); }
 
 /* --- Store Badges --- */
 .store-badges {
