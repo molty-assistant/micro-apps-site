@@ -30,7 +30,7 @@
 
   // -- Scroll-reveal (IntersectionObserver)
   const revealTargets = document.querySelectorAll(
-    '.app-card, .principle, .section-header, .cta-card, .store-badges, .hero-content, .hero-visual'
+    '.app-card, .principle, .section-header, .cta-card, .hero-content, .hero-visual'
   );
 
   if ('IntersectionObserver' in window) {
