@@ -509,7 +509,7 @@ a:focus-visible {
 
 /* --- Live Apps Grid --- */
 .app-grid--live {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 80px;
 }
 
@@ -737,12 +737,6 @@ a:focus-visible {
 /* ============================================
    Responsive
    ============================================ */
-
-@media (max-width: 1100px) {
-  .app-grid--live {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media (max-width: 968px) {
   :root {
